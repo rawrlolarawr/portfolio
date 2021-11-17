@@ -1,0 +1,13 @@
+.project {
+    border-radius: 25px;
+    background-color: #121212;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color:darkslategrey
+}

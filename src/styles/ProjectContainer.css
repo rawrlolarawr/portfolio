@@ -1,0 +1,16 @@
+ol {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+h2 {
+    text-align: center;
+}
+
+.card {
+    height: 40%;
+    width: 40%;
+    padding: .5em;
+    margin: .5em;
+}
