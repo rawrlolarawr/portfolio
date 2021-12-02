@@ -1,5 +1,5 @@
 //Data Obj
-import { Contact, Projects, Posts } from "./data/data"
+import { Contact, Projects } from "./lib/data/data"
 
 //Style
 import './styles/App.css'
@@ -7,7 +7,6 @@ import './styles/App.css'
 //Components
 import Header from './components/Header'
 import ProjectContainer from './containers/ProjectContainer'
-//import PostContainer from './containers/PostContainer'
 import Footer from './components/Footer'
 
 const App = () => {
@@ -15,7 +14,6 @@ const App = () => {
     <>
       <Header data={Contact} />
       <ProjectContainer projects={Projects} />
-      {/* <PostContainer posts={Posts} /> */}
       <Footer data={Contact} />
     </>
   )
