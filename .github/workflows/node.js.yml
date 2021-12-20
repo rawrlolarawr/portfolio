@@ -21,6 +21,8 @@ jobs:
       with:
         node-version: 16.x
         cache: 'npm'
+    - run: git config user.email "lolachaison@gmail.com"
+    - run: git config user.name "rawrlolarawr"
     - run: npm install
     - run: npm run predeploy
     - run: npm run deploy
