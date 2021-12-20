@@ -1,6 +1,6 @@
 export const Contact = {
     name: "Lola Chaison",
-    email: "lolachaison@gmail.com",
+    email: "lola.chaison@rawrlolarawr.me",
     github: "https://github.com/rawrlolarawr"
 }
 
