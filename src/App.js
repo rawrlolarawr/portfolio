@@ -1,5 +1,6 @@
 //Data Obj
-import { Contact, Projects } from "./lib/data/data"
+import contact from 'contact.json'
+import projects from 'project.json'
 
 //Style
 import './styles/App.css'

@@ -1,13 +1,14 @@
-import '../styles/Project.css'
+import { Container, Title, Desc, Button } from './styles/ProjectStyles.js'
 
-const Project = (props) => {
+const Project = ({ project }) => {
     return (
-        <div className='project'>
-            <h3>{props.project.title}</h3>
-            <p>{props.project.description}</p>
-            <a href={props.project.gitLink}>Github</a>
-            {props.getDeployment(props.project)}
-        </div>
+        <Container>
+            <Title>{project.title}</Title>
+            <Desc>{project.description}</Desc>
+            <Button href={project.gitLink}>Github</Button>
+            {project.blogLink && <Button href={project.blogLink}>Read More...</Button>}
+            {project.deploy && <Button href={project.deploy}>Try it out!</Button>}
+        </Container>
     )
 }
 

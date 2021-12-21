@@ -1,6 +1,7 @@
 ol {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     background-color: black;
 }
 
@@ -9,8 +10,8 @@ h2 {
 }
 
 .card {
-    height: 40%;
-    width: 40%;
+    height: 45%;
+    width: 45%;
     padding: .5em;
     margin: .5em;
 }
