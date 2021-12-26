@@ -1,29 +1,25 @@
-import '../styles/ProjectContainer.css'
-import Project from '../components/Project'
-import { KeyGen } from '../lib/keygen'
+import React from 'react';
+import Project from '../components/Project';
+import { KeyGen } from '../lib/keygen';
+import { Grid } from '@mui/material';
 
 const ProjectContainer = ({ projects }) => {
-    const buildProject = project => {
-        return {
-            title,
-            description,
-            gitLink,
-            blogLink,
-            deploy
-        }
-    }
-    const renderItem = (items) => {
-        return items.map(project => <div className='card'><Project key={KeyGen(project.title)} project={project}/></div>)
-    }
+  return (
+    <Grid
+      container
+      box
+      sx={{ m: 2 }}
+      spacing={3}
+      justifyContent="center"
+      alignItems="stretch"
+    >
+      {projects.map((project) => (
+        <Grid item xs={10} md={5} key={KeyGen(project.title)}>
+          <Project project={project} />
+        </Grid>
+      ))}
+    </Grid>
+  );
+};
 
-    return (
-        <>
-            <h2>Projects</h2>
-            <ol>
-                {renderItem(projects)}
-            </ol>
-        </>
-    )
-}
-
-export default ProjectContainer
+export default ProjectContainer;

@@ -1,14 +1,14 @@
-//Data Obj
-import contact from 'contact.json'
-import projects from 'project.json'
+// Data Obj
+import { Contact } from './lib/data/contacts';
+import { Projects } from './lib/data/projects';
 
-//Style
-import './styles/App.css'
+// Components
+import Header from './components/Header';
+import ProjectContainer from './containers/ProjectContainer';
+import Footer from './components/Footer';
 
-//Components
-import Header from './components/Header'
-import ProjectContainer from './containers/ProjectContainer'
-import Footer from './components/Footer'
+// Libraries & Frameworks
+import React from 'react';
 
 const App = () => {
   return (
@@ -17,7 +17,7 @@ const App = () => {
       <ProjectContainer projects={Projects} />
       <Footer data={Contact} />
     </>
-  )
-}
+  );
+};
 
 export default App;

@@ -1,12 +1,19 @@
-import '../styles/Header.css'
+import React from 'react';
+import { AppBar, Typography, Stack } from '@mui/material';
 
-const Header = props => {
-    return (
-        <div className='header'>
-            <h1><strong>♥///♥</strong></h1>
-            <h1>{props.data.name}</h1>
-        </div>
-    )
-}
+const Header = ({ data: { name } }) => {
+  return (
+    <AppBar color="primary" position="static">
+      <Stack alignItems="center">
+        <Typography variant="h3" color="inherit">
+          ♥/ {name} /♥
+        </Typography>
+        <Typography variant="h3" color="inherit" aligncenter="true">
+          ♥/ Full Stack Developer /♥
+        </Typography>
+      </Stack>
+    </AppBar>
+  );
+};
 
-export default Header
+export default Header;

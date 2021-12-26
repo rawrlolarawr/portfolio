@@ -4,20 +4,24 @@
   "private": true,
   "homepage": "http://rawrlolarawr.me/portfolio",
   "dependencies": {
-    "dotenv": "^10.0.0",
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@mui/icons-material": "^5.2.5",
+    "@mui/material": "^5.2.5",
+    "prop-types": "^15.8.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-markdown": "^7.1.1",
-    "react-scripts": "4.0.3",
-    "styled-components": "^5.3.3"
+    "react-scripts": "^5.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "gh-deploy": "gh-pages -d build"
+    "pretest": "eslint \"src/**/*.{js,jsx}\" --ignore-path .gitignore .",
+    "lint": "npm run pretest -- --fix",
+    "prettier": "prettier --write \"src/**/*.{js,jsx}\""
   },
   "eslintConfig": {
     "extends": [
@@ -37,6 +41,12 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^3.2.3"
+    "@babel/core": "^7.16.5",
+    "@babel/preset-env": "^7.16.5",
+    "eslint": "^8.5.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-strongloop": "^2.1.0",
+    "eslint-plugin-react": "^7.28.0",
+    "prettier": "2.5.1"
   }
 }
