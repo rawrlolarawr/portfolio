@@ -14,7 +14,7 @@ const ProjectContainer = ({ projects }) => {
       alignItems='stretch'
     >
       {projects.map((project) => (
-        <Grid item xs={8} md={5} key={KeyGen(project.title)} alignItems='stretch'>
+        <Grid item xs={8} md={5} key={KeyGen(project.title)}>
           <Project project={project} />
         </Grid>
       ))}

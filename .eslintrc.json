@@ -22,6 +22,6 @@
     "rules": {
         "max-len": "off",
         "react/prop-types": "off",
-        "semi": ":"
+        "semi": "off"
     }
 }
