@@ -13,7 +13,7 @@ const Project = ({
 }) => {
   return (
     <Card>
-      <CardContent sx={{ minHeight: '15vh' }}>
+      <CardContent sx={{ minHeight: '20vh' }}>
         <Typography variant='h5'>{title}</Typography>
         <Typography variant='p'>{description}</Typography>
       </CardContent>

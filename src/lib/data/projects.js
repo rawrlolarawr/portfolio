@@ -2,7 +2,7 @@ export const Projects = [
   {
     title: 'Local Events',
     description:
-      "A CLI app for finding Local events from the Mystic Aquarium and Children's Museum using Nokogiri for web scraping",
+      'A CLI app for finding Local events from the Mystic Aquarium and Childrens Museum using Nokogiri for web scraping',
     gitLink: 'https://github.com/rawrlolarawr/LocalEvents',
     blogLink:
       'https://www.rawrlolarawr.me/blog/2020-03-22-web_scraping_it_works_for_now',

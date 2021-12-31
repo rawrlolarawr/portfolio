@@ -5,10 +5,18 @@ const Header = ({ data: { name, title } }) => {
   return (
     <AppBar color='primary' position='static'>
       <Stack alignItems='center'>
-        <Typography fontSize={{xs: '2rem', md: '3rem'}} variant='h3' color='inherit'>
+        <Typography
+          fontSize={{ xs: '2rem', md: '3rem' }}
+          variant='h3'
+          color='inherit'
+        >
           ♥/ {name} /♥
         </Typography>
-        <Typography fontSize={{xs: '2rem', md: '3rem'}} variant='h3' color='inherit'>
+        <Typography
+          fontSize={{ xs: '2rem', md: '3rem' }}
+          variant='h3'
+          color='inherit'
+        >
           ♥/ {title} /♥
         </Typography>
       </Stack>
