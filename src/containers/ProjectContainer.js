@@ -8,13 +8,13 @@ const ProjectContainer = ({ projects }) => {
     <Grid
       container
       box
-      sx={{ m: 2 }}
+      sx={{ my: 2 }}
       spacing={3}
-      justifyContent="center"
-      alignItems="stretch"
+      justifyContent='center'
+      alignItems='stretch'
     >
       {projects.map((project) => (
-        <Grid item xs={10} md={5} key={KeyGen(project.title)}>
+        <Grid item xs={8} md={5} key={KeyGen(project.title)} alignItems='stretch'>
           <Project project={project} />
         </Grid>
       ))}

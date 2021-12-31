@@ -14,20 +14,20 @@ const Project = ({
   return (
     <Card>
       <CardContent sx={{ minHeight: '15vh' }}>
-        <Typography variant="h5">{title}</Typography>
-        <Typography variant="p">{description}</Typography>
+        <Typography variant='h5'>{title}</Typography>
+        <Typography variant='p'>{description}</Typography>
       </CardContent>
       <CardActions disableSpacing>
-        <IconButton aria-label="GitHub" href={gitLink}>
+        <IconButton aria-label='GitHub' href={gitLink}>
           <GitHub />
         </IconButton>
         {blogLink && (
-          <IconButton aria-label="Blog" href={blogLink}>
+          <IconButton aria-label='Blog' href={blogLink}>
             <Feed />
           </IconButton>
         )}
         {deploy && (
-          <IconButton aria-label="Deploy" href={deploy}>
+          <IconButton aria-label='Deploy' href={deploy}>
             <Preview />
           </IconButton>
         )}
