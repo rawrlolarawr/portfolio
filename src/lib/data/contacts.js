@@ -1,7 +1,7 @@
 export const Contact = {
   name: 'Lola Jane Chaison',
-  email: 'lolachaison@gmail.com',
+  email: 'contact@rawrlolarawr.com',
   title: 'Full-Stack Developer',
   github: 'https://github.com/rawrlolarawr',
-  website: 'https://rawrlolarawr.me',
+  website: 'https://rawrlolarawr.com',
 };

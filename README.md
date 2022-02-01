@@ -1,4 +1,4 @@
 ## RawrLolaRawr Portfolio
 
-Built using react
+Built using React
 Styled with Material UI

@@ -14,7 +14,7 @@ const Footer = ({ data: { email, github } }) => {
       <Container maxWidth='md'>
         <Toolbar>
           <Typography variant='body1' color='inherit'>
-            &copy; 2021 RawrLolaRawr
+            &copy; 2022 RawrLolaRawr
           </Typography>
           <IconButton
             aria-label='Email'
